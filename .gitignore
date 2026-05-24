@@ -1,0 +1,41 @@
+# Entorno virtual
+venv/
+.venv/
+env/
+
+# Variables de entorno (NUNCA subir a GitHub)
+.env
+
+# Datos crudos (pueden ser muy grandes)
+data/raw/*.log
+data/raw/*.pcap
+data/raw/*.pcapng
+data/raw/*.evtx
+data/processed/
+
+# Excepciones: sí subir los samples pequeños
+!data/samples/
+
+# Base de datos local
+*.db
+*.sqlite
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# macOS
+.DS_Store
+
+# Outputs temporales
+outputs/
