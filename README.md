@@ -50,7 +50,7 @@ pip install -r requirements.txt
 
 ```bash
 cp .env.example .env
-# Editar .env y agregar tu ANTHROPIC_API_KEY
+# Editar .env y agregar tu ANALYZER_API_KEY
 ```
 
 ---

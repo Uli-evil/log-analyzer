@@ -18,7 +18,7 @@ Uso:
     python core/detector.py
     python core/detector.py --source linux
     python core/detector.py --contamination 0.08
-    python core/detector.py --explain   (llama a Claude API por cada anomalía)
+    python core/detector.py --explain   (llama a motor de análisis por cada anomalía)
 """
 
 import sys
@@ -296,8 +296,8 @@ class AnomalyDetector:
                       f"score={r['if_score']:.3f}")
 
         print(f"\n{'='*55}")
-        print("  Siguiente paso: core/claude_client.py")
-        print("  → Explicar cada anomalía con Claude API")
+        print("  Siguiente paso: core/ai_engine.py")
+        print("  → Explicar cada anomalía con motor de análisis")
         print(f"{'='*55}\n")
 
 
@@ -355,7 +355,7 @@ def main():
     ap.add_argument("--contamination", type=float, default=0.05,
                     help="Fracción esperada de anomalías (default: 0.05)")
     ap.add_argument("--explain", action="store_true",
-                    help="Llamar a Claude API para explicar anomalías")
+                    help="Llamar a motor de análisis para explicar anomalías")
     args = ap.parse_args()
 
     db_path = ROOT / args.db
@@ -399,16 +399,16 @@ def main():
     # Reporte
     detector.report(df, rule_hits)
 
-    # ── Opcional: explicar con Claude API ──────────────────────────────────
+    # ── Opcional: explicar con motor de análisis ──────────────────────────────────
     if args.explain:
-        print("  Llamando a Claude API para explicar anomalías...")
+        print("  Llamando a motor de análisis para explicar anomalías...")
         try:
-            from core.claude_client import explain_anomalies_batch
-            explain_anomalies_batch(db_path=str(db_path), limit=10)
+            from core.ai_engine import run_analysis_batch
+            run_analysis_batch(db_path=str(db_path), limit=10)
         except ImportError:
-            print("  claude_client.py aún no existe — se crea en la siguiente etapa")
+            print("  ai_engine.py aún no existe — se crea en la siguiente etapa")
         except Exception as e:
-            print(f"  Error al llamar Claude API: {e}")
+            print(f"  Error al llamar motor de análisis: {e}")
 
     # Registrar ejecución
     detector.loader.log_run(
@@ -422,7 +422,7 @@ def main():
     print(f"\n  Para ver las anomalías en DB Browser:")
     print(f"    SELECT * FROM anomalies ORDER BY detected_at DESC;")
     print(f"\n  Siguiente paso:")
-    print(f"    python core/claude_client.py  → explicar con IA\n")
+    print(f"    python core/ai_engine.py  → explicar con IA\n")
 
 
 if __name__ == "__main__":

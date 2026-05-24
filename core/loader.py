@@ -69,10 +69,10 @@ CREATE TABLE IF NOT EXISTS anomalies (
     method        TEXT,             -- isolation_forest | sql_rule | combined
     score         REAL,             -- score del modelo (más negativo = más anómalo)
     rule_name     TEXT,             -- nombre de la regla SQL si aplica
-    explanation   TEXT,             -- texto generado por Claude API
+    summary         TEXT,             -- análisis del motor de seguridad
     severity      TEXT,             -- crítica | alta | media | baja
-    likely_attack TEXT,             -- tipo de ataque inferido
-    recommended_action TEXT,
+    attack_pattern    TEXT,             -- patrón de ataque identificado
+    response_action    TEXT,             -- acción de respuesta recomendada
     detected_at   TEXT DEFAULT (datetime('now'))
 );
 
@@ -270,19 +270,19 @@ class Loader:
 
     def insert_anomaly(self, event_id: int, method: str, score: float,
                        rule_name: Optional[str] = None,
-                       explanation: Optional[str] = None,
+                       summary: Optional[str] = None,
                        severity: Optional[str] = None,
-                       likely_attack: Optional[str] = None,
-                       recommended_action: Optional[str] = None) -> int:
+                       attack_pattern: Optional[str] = None,
+                       response_action: Optional[str] = None) -> int:
         """Inserta una anomalía detectada."""
         with self._connect() as conn:
             cursor = conn.execute("""
                 INSERT INTO anomalies
-                    (event_id, method, score, rule_name, explanation,
-                     severity, likely_attack, recommended_action)
+                    (event_id, method, score, rule_name, summary,
+                     risk_level, attack_pattern, response_action)
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-            """, (event_id, method, score, rule_name, explanation,
-                  severity, likely_attack, recommended_action))
+            """, (event_id, method, score, rule_name, summary,
+                  risk_level, attack_pattern, response_action))
             conn.commit()
             return cursor.lastrowid
 

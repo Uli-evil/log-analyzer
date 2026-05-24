@@ -5,7 +5,7 @@ Demo pública del proyecto. El visitante puede:
   1. Ver KPIs de seguridad en tiempo real
   2. Explorar los ataques detectados por tipo
   3. Ver la línea de tiempo de eventos
-  4. Leer las explicaciones generadas por Claude API
+  4. Leer las explicaciones generadas por motor de análisis
   5. Subir su propio archivo de log para analizarlo
 
 Uso:
@@ -82,9 +82,9 @@ def load_stats() -> dict:
         sources  = dict(conn.execute(
             "SELECT source, COUNT(*) FROM events GROUP BY source").fetchall())
         attacks  = dict(conn.execute("""
-            SELECT likely_attack, COUNT(*) FROM anomalies
-            WHERE likely_attack IS NOT NULL
-            GROUP BY likely_attack ORDER BY COUNT(*) DESC
+            SELECT attack_pattern, COUNT(*) FROM anomalies
+            WHERE attack_pattern IS NOT NULL
+            GROUP BY attack_pattern ORDER BY COUNT(*) DESC
         """).fetchall())
     return {
         "total": total, "anomalies": anomalies,
@@ -113,14 +113,14 @@ def load_anomalies_df() -> pd.DataFrame:
     with sqlite3.connect(str(DB_PATH)) as conn:
         return pd.read_sql_query("""
             SELECT a.id, a.method, a.score, a.rule_name,
-                   a.explanation, a.severity as anomaly_severity,
-                   a.likely_attack, a.recommended_action,
+                   a.summary, a.severity as risk_level,
+                   a.attack_pattern, a.response_action,
                    e.timestamp, e.source, e.event_type,
                    e.src_ip, e.user, e.severity,
                    e.hour_of_day, e.is_night, e.bytes_total, e.extra
             FROM anomalies a
             JOIN events e ON e.id = a.event_id
-            WHERE a.explanation IS NOT NULL
+            WHERE a.summary IS NOT NULL
             ORDER BY e.severity DESC, a.score ASC
             LIMIT 200
         """, conn)
@@ -273,7 +273,7 @@ elif page == "🔴 Anomalías detectadas":
     df_a = load_anomalies_df()
 
     if df_a.empty:
-        st.info("No hay anomalías explicadas aún. Ejecuta: `python core/claude_client.py`")
+        st.info("No hay anomalías explicadas aún. Ejecuta: `python core/ai_engine.py`")
         st.stop()
 
     # Filtros
@@ -282,7 +282,7 @@ elif page == "🔴 Anomalías detectadas":
         fuentes = ["Todas"] + list(df_a["source"].unique())
         fuente  = st.selectbox("Fuente", fuentes)
     with col2:
-        sevs    = ["Todas"] + list(df_a["anomaly_severity"].dropna().unique())
+        sevs    = ["Todas"] + list(df_a["risk_level"].dropna().unique())
         sev_f   = st.selectbox("Severidad", sevs)
     with col3:
         methods = ["Todos"] + list(df_a["method"].unique())
@@ -291,14 +291,14 @@ elif page == "🔴 Anomalías detectadas":
     # Aplicar filtros
     filtered = df_a.copy()
     if fuente  != "Todas": filtered = filtered[filtered["source"] == fuente]
-    if sev_f   != "Todas": filtered = filtered[filtered["anomaly_severity"] == sev_f]
+    if sev_f   != "Todas": filtered = filtered[filtered["risk_level"] == sev_f]
     if method  != "Todos": filtered = filtered[filtered["method"] == method]
 
     st.caption(f"Mostrando {len(filtered):,} anomalías")
 
     # Tabla
     cols_show = ["timestamp", "source", "event_type", "src_ip",
-                 "user", "anomaly_severity", "likely_attack", "method"]
+                 "user", "risk_level", "attack_pattern", "method"]
     available = [c for c in cols_show if c in filtered.columns]
     st.dataframe(
         filtered[available].rename(columns={
@@ -307,8 +307,8 @@ elif page == "🔴 Anomalías detectadas":
             "event_type":      "Tipo evento",
             "src_ip":          "IP origen",
             "user":            "Usuario",
-            "anomaly_severity":"Severidad",
-            "likely_attack":   "Tipo de ataque",
+            "risk_level":"Severidad",
+            "attack_pattern":   "Tipo de ataque",
             "method":          "Método detección",
         }),
         use_container_width=True,
@@ -331,18 +331,18 @@ elif page == "🔴 Anomalías detectadas":
             st.markdown(f"**Hora:** `{row.get('hour_of_day','?')}:00`"
                         + (" 🌙 Nocturno" if row.get("is_night") else ""))
         with col_r:
-            sev = str(row.get("anomaly_severity","baja"))
+            sev = str(row.get("risk_level","baja"))
             st.markdown(f"**Severidad:** {severity_badge(sev)}",
                         unsafe_allow_html=True)
-            st.markdown(f"**Ataque:** `{row.get('likely_attack','N/A')}`")
+            st.markdown(f"**Ataque:** `{row.get('attack_pattern','N/A')}`")
             st.markdown(f"**Método:** `{row.get('method','N/A')}`")
             if row.get("score"):
                 st.markdown(f"**Score ML:** `{row['score']:.3f}`")
 
-        if row.get("explanation"):
-            st.info(f"💬 **Explicación (Claude):** {row['explanation']}")
-        if row.get("recommended_action"):
-            st.warning(f"⚡ **Acción recomendada:** {row['recommended_action']}")
+        if row.get("summary"):
+            st.info(f"💬 **Explicación (Claude):** {row['summary']}")
+        if row.get("response_action"):
+            st.warning(f"⚡ **Acción recomendada:** {row['response_action']}")
 
 
 # ---------------------------------------------------------------------------
@@ -409,33 +409,33 @@ elif page == "📈 Análisis de eventos":
 # ---------------------------------------------------------------------------
 
 elif page == "🤖 Explicaciones IA":
-    st.title("🤖 Explicaciones generadas por Claude API")
+    st.title("🤖 Explicaciones generadas por motor de análisis")
     st.caption("Cada anomalía analizada por un analista SOC virtual")
 
     df_a = load_anomalies_df()
-    explained = df_a[df_a["explanation"].notna()] if not df_a.empty else pd.DataFrame()
+    explained = df_a[df_a["summary"].notna()] if not df_a.empty else pd.DataFrame()
 
     if explained.empty:
-        st.info("Aún no hay explicaciones. Ejecuta: `python core/claude_client.py --limit 20`")
+        st.info("Aún no hay explicaciones. Ejecuta: `python core/ai_engine.py --limit 20`")
         st.stop()
 
     st.metric("Anomalías explicadas", len(explained))
 
     for _, row in explained.head(20).iterrows():
-        sev = str(row.get("anomaly_severity", "baja")).lower()
+        sev = str(row.get("risk_level", "baja")).lower()
         icon = {"crítica": "🔴", "alta": "🟠", "media": "🟡", "baja": "🟢"}.get(sev, "⚪")
 
         with st.expander(
             f"{icon} [{row.get('source','').upper()}] "
             f"{row.get('event_type','')} — "
-            f"{row.get('likely_attack','')} — "
+            f"{row.get('attack_pattern','')} — "
             f"IP: {row.get('src_ip','N/A')}"
         ):
             col1, col2 = st.columns(2)
             with col1:
                 st.markdown(f"**Severidad:** {severity_badge(sev)}",
                             unsafe_allow_html=True)
-                st.markdown(f"**Tipo de ataque:** `{row.get('likely_attack','N/A')}`")
+                st.markdown(f"**Tipo de ataque:** `{row.get('attack_pattern','N/A')}`")
                 st.markdown(f"**Método:** `{row.get('method','N/A')}`")
                 if row.get("score"):
                     st.markdown(f"**Score ML:** `{row['score']:.3f}`")
@@ -444,10 +444,10 @@ elif page == "🤖 Explicaciones IA":
                 st.markdown(f"**Usuario:** `{row.get('user','N/A')}`")
                 st.markdown(f"**Hora:** `{row.get('hour_of_day','?')}:00`")
 
-            if row.get("explanation"):
-                st.info(f"💬 {row['explanation']}")
-            if row.get("recommended_action"):
-                st.warning(f"⚡ **Acción:** {row['recommended_action']}")
+            if row.get("summary"):
+                st.info(f"💬 {row['summary']}")
+            if row.get("response_action"):
+                st.warning(f"⚡ **Acción:** {row['response_action']}")
 
 
 # ---------------------------------------------------------------------------
