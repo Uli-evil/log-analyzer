@@ -1,6 +1,6 @@
 # Log Analyzer — Detección de Anomalías con IA
 
-Pipeline completo de análisis de logs de seguridad con detección de anomalías usando Machine Learning y Claude API.
+Pipeline completo de análisis de logs de seguridad con detección de anomalías usando Machine Learning.
 
 ---
 
