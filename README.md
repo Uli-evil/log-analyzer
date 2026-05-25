@@ -228,5 +228,4 @@ df_win = pd.read_csv("data/raw/windows_events.csv")
 
 ## Autor
 
-Proyecto de portafolio para el perfil **Data & Cyber Security Analyst**.  
-Construido con asistencia de Claude (Anthropic).
+Proyecto de portafolio para el perfil Cyber Security Analyst
