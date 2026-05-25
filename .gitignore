@@ -7,10 +7,6 @@ env/
 .env
 
 # Datos crudos (pueden ser muy grandes)
-data/raw/*.log
-data/raw/*.pcap
-data/raw/*.pcapng
-data/raw/*.evtx
 data/processed/
 
 # Excepciones: sí subir los samples pequeños

